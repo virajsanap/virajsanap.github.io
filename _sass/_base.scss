@@ -162,8 +162,10 @@ ul.task-list input[type="checkbox"] {
 // Card
 
 .card {
+  width: 700px;
+  max-width: none;
   background-color: var(--global-card-bg-color);
-
+  display: flex;
   img {
     width: 100%;
   }
@@ -173,7 +175,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   .card-item {
-    width: auto;
+    width: 50%;
     margin-bottom: 10px;
 
     .row {
@@ -623,6 +625,9 @@ footer.sticky-bottom {
   }
 
   .card {
+    width: 700px;
+    max-width: none;
+    display: flex;
     img {
       width: 100%;
     }
