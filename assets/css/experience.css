@@ -1,0 +1,13 @@
+.experience {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.company-logo-container {
+    width: 25%;
+}
+
+.job-description {
+    flex-grow: 1;
+}
