@@ -20,7 +20,8 @@ social: true # includes social icons at the bottom of the page
 ---
 
 <div>
-
+<b> Electronics Engineer</b><br/>
+<b> AI ML Enthusiast </b><br/>
 <br/>
 Hi! I'm Viraj, graduate student at NC State University majoring in Electrical and Computer Engineering, I am passionate about applying my knowledge and skills in machine learning, data science, and computer vision to solve real-world problems. <br/>I am actively seeking a summer internship for 2024 in these domains, where I can contribute to impactful projects and learn from experienced professionals.
 <br/>
