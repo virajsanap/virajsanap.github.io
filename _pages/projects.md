@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: Projects2
+permalink: /projects2/
 description: A growing collection of your cool projects
 nav: false
-nav_order: 3
+nav_order: 6
 display_categories: [education, personal]
 horizontal: false
 ---

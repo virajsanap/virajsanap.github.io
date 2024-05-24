@@ -16,7 +16,7 @@ horizontal: false
   <article>
     <div class="projects">
     <ol class="list-unstyled">
-              <a href="../_projects/1_project.md">
+              <a href="/projects/youtube-statistics/">
               <li class="media">
                 <img src="../assets/img/youtube-stats.png" class="mr-3" alt="Project Image 1" style="max-width: 200px;">
                 <div class="media-body">
@@ -46,5 +46,6 @@ horizontal: false
     </div>
   </article>
 </div>
+
 
 

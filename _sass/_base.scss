@@ -210,6 +210,8 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+
+
 .profile.float-right {
   margin-left: 1rem;
 }
@@ -626,19 +628,24 @@ footer.sticky-bottom {
   }
 
   .card {
-    width: 800px;
+    width: 100%;
     max-width: none;
     display: flex;
     border: none;
-    img {
-      width: 100%;
-    }
+    height: auto;
+  }
+
+  .card img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 1rem;
   }
 
   .card-item {
-    width: auto;
+    width: 100%;
     margin-bottom: 10px;
-
+    display: flex;
     .row {
       display: flex;
       align-items: center;
@@ -647,7 +654,7 @@ footer.sticky-bottom {
 
   .grid-sizer,
   .grid-item {
-    width: 250px;
+    width: 100%;
     margin-bottom: 10px;
   }
 
