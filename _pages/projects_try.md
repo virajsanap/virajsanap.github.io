@@ -18,7 +18,7 @@ horizontal: false
     <ol class="list-unstyled">
               <a href="/projects/youtube-statistics/">
               <li class="media">
-                <img src="../assets/img/youtube-stats.png" class="mr-3" alt="Project Image 1" style="max-width: 200px;">
+                <img src="../assets/img/youtube-stats.png" class="mr-3" alt="Project Image 1" style="max-width: 200px; padding-bottom: 20px;">
                 <div class="media-body">
                   <h3>Youtube Statistics EDA and Earnings Prediction (Python)</h3>
                   <p>Analyzing YouTube statistics to predict earnings and offer strategic insights for content creators.</p>
@@ -27,7 +27,7 @@ horizontal: false
               </a>
               <a href="/projects/fer_cnn/">
               <li class="media">
-                <img src="../assets/img/fer-img.png" class="mr-3" alt="Project Image 2" style="max-width: 200px;">
+                <img src="../assets/img/fer-img.png" class="mr-3" alt="Project Image 2" style="max-width: 200px; padding-bottom: 20px;">
                 <div class="media-body">
                   <h3>Facial Emotion Recognition (Python)</h3>
                   <p>A real-time facial emotion recognition system using CNNs, achieving enhanced emotion prediction accuracy from video streams</p>
@@ -35,7 +35,7 @@ horizontal: false
               </li>
               </a>
               <li class="media">
-                <img src="../assets/img/pic-micro.jpeg" class="mr-3" alt="Project Image 3" style="max-width: 200px;">
+                <img src="../assets/img/pic-micro.jpeg" class="mr-3" alt="Project Image 3" style="max-width: 200px; padding-bottom: 20px;">
                 <div class="media-body">
                   <h3>Crop Protection From Heavy Rainfall (Embedded C)</h3>
                   <p>Developed an embedded system using a PIC microcontroller, humidity and temperature sensors to predict heavy rainfall. Designed a PCB and prototyped the system. Triggers automating the activation of the DC motor occurred when heavy rainfall was predicted, serving as an integral function within the crop covering mechanism.</p>
