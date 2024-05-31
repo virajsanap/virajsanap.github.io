@@ -633,6 +633,7 @@ footer.sticky-bottom {
     display: flex;
     border: none;
     height: auto;
+    padding-bottom: 20px;
   }
 
   .card img {
@@ -640,6 +641,7 @@ footer.sticky-bottom {
     height: 100%;
     object-fit: cover;
     margin-right: 1rem;
+
   }
 
   .card-item {
@@ -650,6 +652,7 @@ footer.sticky-bottom {
       display: flex;
       align-items: center;
     }
+    
   }
 
   .grid-sizer,

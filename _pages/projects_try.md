@@ -21,20 +21,19 @@ horizontal: false
                 <img src="../assets/img/youtube-stats.png" class="mr-3" alt="Project Image 1" style="max-width: 200px;">
                 <div class="media-body">
                   <h3>Youtube Statistics EDA and Earnings Prediction (Python)</h3>
-                  <p>Conducted extensive data preprocessing techniques such as One-Hot Encoding, Standardization, Dimensionality Reduction. Optimized ML algorithms to minimize Mean Square Error, providing strategic guidance for maximizing YouTube channel earnings.</p>
-                  <p>Leveraged Random Forest Regression and ANN model, which outperformed other methods, providing the most accurate predictions and valuable insights for content creators to maximize earnings on YouTube.</p>
+                  <p>Analyzing YouTube statistics to predict earnings and offer strategic insights for content creators.</p>
                 </div>
               </li>
               </a>
+              <a href="/projects/fer_cnn/">
               <li class="media">
                 <img src="../assets/img/fer-img.png" class="mr-3" alt="Project Image 2" style="max-width: 200px;">
                 <div class="media-body">
                   <h3>Facial Emotion Recognition (Python)</h3>
-                  <p>Developed a real-time facial emotion recognition system using Convolutional Neural Networks (CNN) model that analyzed video and predicted emotions with 70% accuracy.</p>
-                  <p>Extracted facial features from images and video frames using Python and trained a CNN model on emotion datasets to enable static and real-time emotion prediction.</p>
-                  <p>Accomplished real-time facial emotion analysis through webcam with video with improved accuracy by optimizing model architecture and fine-tuning hyper-parameters.</p>
+                  <p>A real-time facial emotion recognition system using CNNs, achieving enhanced emotion prediction accuracy from video streams</p>
                 </div>
               </li>
+              </a>
               <li class="media">
                 <img src="../assets/img/pic-micro.jpeg" class="mr-3" alt="Project Image 3" style="max-width: 200px;">
                 <div class="media-body">
