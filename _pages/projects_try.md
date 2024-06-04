@@ -34,6 +34,15 @@ horizontal: false
                 </div>
               </li>
               </a>
+              <a href="/projects/cloud-smartcity/">
+              <li class="media">
+                <img src="../assets/img/Smart-City-Platform.png" class="mr-3" alt="Project Image 1" style="max-width: 200px; padding-bottom: 20px;">
+                <div class="media-body">
+                  <h3>Cloud-Native Smart City using AWS</h3>
+                  <p>Cloud Computing - Architecture for a Smart City</p>
+                </div>
+              </li>
+              </a>
               <li class="media">
                 <img src="../assets/img/pic-micro.jpeg" class="mr-3" alt="Project Image 3" style="max-width: 200px; padding-bottom: 20px;">
                 <div class="media-body">
