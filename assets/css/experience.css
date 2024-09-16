@@ -1,13 +1,18 @@
 .experience {
-    display: flex;
+    display: block;
     align-items: flex-start;
     margin-bottom: 20px;
 }
-
 .company-logo-container {
     width: 25%;
+    padding-right: 20px;
 }
-
 .job-description {
     flex-grow: 1;
+    padding-left: 20px;
+}
+.job-entry {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }

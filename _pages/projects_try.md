@@ -16,6 +16,17 @@ horizontal: false
   <article>
     <div class="projects">
         <ol class="list-unstyled">
+            <a href="/projects/Movie_review_NLP/">
+                <li class="card hoverable d-flex flex-row" style="margin-bottom: 20px;">
+                    <div style="width: 30%; display: flex; align-items: center; padding-left: 5px">
+                        <img src="../assets/img/movie.png" style="width: 100%; height: auto; padding: 5px;" alt="Project Image 3">
+                    </div>
+                    <div style="width: 70%; padding-left: 15px; padding-top: 10px;">
+                        <h3 class="card-title">Movie Review Sentiment Analysis</h3>
+                        <p>NLP -  Sentiment Analysis of moview reivews by logistic regression</p>
+                    </div>
+                </li>
+            </a>
             <a href="/projects/youtube-statistics/">
                 <li class="card hoverable d-flex flex-row" style="margin-bottom: 20px;">
                     <div style="width: 30%; display: flex; align-items: center; padding-left: 5px">
