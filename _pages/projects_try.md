@@ -16,7 +16,7 @@ horizontal: false
   <article>
     <div class="projects">
         <ol class="list-unstyled">
-            <a href="/projects/Movie_review_NLP/">
+            <a href="/projects/movie_review_nlp/">
                 <li class="card hoverable d-flex flex-row" style="margin-bottom: 20px;">
                     <div style="width: 30%; display: flex; align-items: center; padding-left: 5px">
                         <img src="../assets/img/movie.png" style="width: 100%; height: auto; padding: 5px;" alt="Project Image 3">

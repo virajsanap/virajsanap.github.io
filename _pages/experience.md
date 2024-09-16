@@ -9,7 +9,7 @@ nav_order: 4
 <link rel="stylesheet" href="../assets/css/experience.css">
 <div class="experience"> 
     <div class="job-entry">
-        <img class="company-logo" src="../assets/img/EnBiSys Lab .png" alt="EnBiSys Lab Logo" style="width: 20%; height: auto;">
+        <img class="company-logo" src="../assets/img/imresizer-1711495501876.jpg" alt="EnBiSys Lab Logo" style="width: 20%; height: auto;">
         <div class="job-description">
             <b> Research Assistant</b> <br/>                                         
             <i> August 2024 - Present</i><br/>
