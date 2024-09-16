@@ -1,1 +1,1 @@
-.experience{display:flex;align-items:flex-start;margin-bottom:20px}.company-logo-container{width:25%}.job-description{flex-grow:1}
+.experience{display:block;align-items:flex-start;margin-bottom:20px}.job-description{flex-grow:1;padding-left:20px}.job-entry{display:flex;align-items:flex-start;margin-bottom:20px}
