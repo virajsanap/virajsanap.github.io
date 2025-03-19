@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+* {
+    font-family: 'IBM Plex Mono', monospace; /* Apply font to all elements */
+  }
+
+body{
+  /* background-color: #f7edc1; */
+  color:black;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-wave {
+  display: inline-block;
+  animation: wave 3s infinite ease-in-out;
+}
