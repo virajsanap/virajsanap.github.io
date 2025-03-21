@@ -60,12 +60,14 @@ function Projects() {
       <div className="flex flex-row gap-2 mt-4 mb-4">
         {allTypes.map(type => (
           <button
-            key={type}
-            onClick={() => setSelectedType(type)}
-            className={`px-1 py-1 ${selectedType === type ? 'bg-black text-white' : 'bg-orange-400 hover:bg-orange-300'}`}
-          >
-            {type}
-          </button>
+          key={type}
+          onClick={() => setSelectedType(type)}
+          className={`px-1 py-1 ${
+            selectedType === type ? "bg-black text-white" : "bg-orange-400 hover:bg-orange-300"
+          }`}
+        >
+          {type}
+        </button>
         ))}
       </div>
       <div className="flex flex-col gap-4">

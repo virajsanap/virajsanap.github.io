@@ -1,12 +1,10 @@
 // Home.jsx
 import { NavLink, Outlet } from "react-router-dom";
 import './App.css';
-import React,{useState, useEffect} from "react";
-
+import React, { useState, useEffect } from "react";
 
 function Home() {
-  let [theme,setTheme] = useState("moon")
-  // const [bgcolor, setBgcolor] = useState(["#fbf5ef"])
+  let [theme, setTheme] = useState("moon");
   const pages = [
     { title: "home", path: "/" },
     { title: "projects", path: "/projects" },
@@ -14,19 +12,17 @@ function Home() {
     { title: "resume", path: "/resume" },
   ];
 
-  function changeTheme(){
-    var t = ((theme=="sun")?"moon":"sun")
-    setTheme(t)
-  };
+  function changeTheme() {
+    const t = theme === "sun" ? "moon" : "sun";
+    setTheme(t);
+  }
 
-  useEffect(()=>{
-    document.body.style.backgroundColor = ((theme==="sun")?"#404550":"#f7edc1");
-    document.body.style.color = ((theme=="sun")?"white":"black");
-  },[theme]);
-  
+  useEffect(() => {
+    document.body.style.backgroundColor = theme === "sun" ? "#404550" : "#F7EDC180";
+    document.body.style.color = theme === "sun" ? "white" : "black";
+  }, [theme]);
 
   return (
-    
     <div className="flex flex-col justify-center w-full md:max-w-3xl mx-auto gap-8 mt-[8vh] p-4">
       <div className="flex flex-col md:flex-row w-full max-w-4xl">
         
@@ -42,20 +38,16 @@ function Home() {
                 key={path}
                 to={path}
                 className={({ isActive }) =>
-                  `hover:text-black focus:outline-none ${
-                    isActive ? "font-bold" : ""
-                  }`
+                  `hover:text-black focus:outline-none ${isActive ? "font-bold" : ""}`
                 }
               >
-                
                 {title}
               </NavLink>
             ))}
-            <button onClick={changeTheme} className={({ isActive }) =>
-                  `hover:text-black focus:outline-none ${
-                    isActive ? "font-bold" : ""
-                  }`
-                }>
+            <button
+              onClick={changeTheme}
+              className="hover:text-black focus:outline-none"
+            >
               {theme}
             </button>
           </nav>
@@ -68,7 +60,6 @@ function Home() {
       </div>
     </div>
   );
-  
 }
 
 export default Home;
