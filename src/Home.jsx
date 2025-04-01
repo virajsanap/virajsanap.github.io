@@ -38,7 +38,7 @@ function Home() {
                 key={path}
                 to={path}
                 className={({ isActive }) =>
-                  `hover:text-black focus:outline-none ${isActive ? "font-bold" : ""}`
+                  `hover:text-orange-500 focus:outline-none ${isActive ? "font-bold" : ""}`
                 }
               >
                 {title}
@@ -46,7 +46,7 @@ function Home() {
             ))}
             <button
               onClick={changeTheme}
-              className="hover:text-black focus:outline-none"
+              className="hover:text-orange-500 focus:outline-none"
             >
               {theme}
             </button>

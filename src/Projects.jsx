@@ -1,10 +1,11 @@
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
 
 const projectSections = [
   {
     title: "Personal/ Coursework Projects",
     list: [
-      { title: "Youtube EDA", type: "[analytics]", description: "Exploratory data analysis on YouTube video trends and metadata." },
+      { title: "Youtube EDA", type: "[analytics]", description: "Exploratory data analysis on YouTube video trends and metadata.", link: "https://github.com/virajsanap/R-Shiny-Dashboard" },
       { title: "AI Image Classifier", type: "[ml]", description: "Built an AI model for image classification using deep learning." },
       { title: "MedQuad LLM", type: "[nlp]", description: "Developed a medical question-answering system using LLMs on the MedQuAD dataset." },
       { title: "GitHub Miner", type: "[swe]", description: "Designed a tool to extract and analyze GitHub repository data for insights." },
@@ -37,7 +38,10 @@ function Section({ section, selectedType }) {
       <h2 className="text-xl font-bold mt-2 mb-3">{title}</h2>
       <div className="flex flex-col gap-2">
         {filteredList.map((item, index) => (
-          <div key={index} className="flex flex-row items-center p-3 border shadow w-full">
+          <div key={index} className="relative flex flex-row items-center p-3 border shadow w-full">
+            <a href={item.link} className="absolute top-4 right-5  text-sm flex items-center gap-1"><FaGithub/>
+            <span className="text-sm text-blue-600">Github</span>
+            </a>
             <div className="flex flex-col">
               <strong>{item.title}</strong>
               <p className="text-sm text-orange-600">{item.type}</p>
@@ -58,6 +62,7 @@ function Projects() {
     <div className="p-6 max-w-5xl mx-auto">
       <h1 className="text-2xl font-bold mb-4">My Projects</h1>
       <div className="flex flex-row gap-2 mt-4 mb-4">
+        
         {allTypes.map(type => (
           <button
           key={type}
@@ -73,6 +78,7 @@ function Projects() {
       <div className="flex flex-col gap-4">
         {projectSections.map((section, index) => (
           <Section key={index} section={section} selectedType={selectedType} />
+          
         ))}
       </div>
     </div>
