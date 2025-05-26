@@ -38,7 +38,7 @@ function Home() {
                 key={path}
                 to={path}
                 className={({ isActive }) =>
-                  `hover:text-orange-500 focus:outline-none ${isActive ? "font-bold" : ""}`
+                  `hover:text-orange-500 focus:outline-none ${isActive ? "font-bold text-orange-500" : ""}`
                 }
               >
                 {title}
