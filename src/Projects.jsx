@@ -5,24 +5,24 @@ const projectSections = [
   {
     title: "Personal/ Coursework Projects",
     list: [
-      { title: "Youtube EDA", type: "[analytics]", description: "Exploratory data analysis on YouTube video trends and metadata.", link: "https://github.com/virajsanap/R-Shiny-Dashboard" },
+      { title: "Youtube EDA", type: "[analytics]", description: "Exploratory data analysis on YouTube video trends and metadata.", link: "https://github.com/virajsanap/Youtube-Stats-EDA-and-Visualization" },
       { title: "AI Image Classifier", type: "[ml]", description: "Built an AI model for image classification using deep learning." },
-      { title: "MedQuad LLM", type: "[nlp]", description: "Developed a medical question-answering system using LLMs on the MedQuAD dataset." },
+      { title: "MedQuad LLM", type: "[nlp]", description: "Developed a medical question-answering system using LLMs on the MedQuAD dataset.", link:"https://github.com/virajsanap/FineTuned_MedQUAD"},
       { title: "GitHub Miner", type: "[swe]", description: "Designed a tool to extract and analyze GitHub repository data for insights." },
-      { title: "WolfEvents", type: "[swe]", description: "Developed an event management platform for university students." },
-      { title: "Training MLP and CNN on CIFAR10", type: "[cv]", description: "Implemented MLP and CNN models for image classification on CIFAR-10 dataset." },
+      { title: "WolfEvents", type: "[swe]", description: "Developed an event management platform for university students.", link:"https://github.com/virajsanap/WolfEvents" },
+      { title: "Training MLP and CNN on CIFAR10", type: "[cv]", description: "Implemented MLP and CNN models for image classification on CIFAR-10 dataset.",link:""},
       { title: "Vision Transformer", type: "[cv]", description: "Explored Vision Transformers for image classification and feature extraction." },
       { title: "Self Supervised Learning", type: "[cv]", description: "Applied self-supervised learning techniques for representation learning in computer vision." },
-      { title: "Convolution", type: "[dis]", description: "Studied convolution operations and their impact on image processing." },
+      { title: "Convolution", type: "[dis]", description: "Studied convolution operations and their impact on image processing.", link: "https://github.com/virajsanap/convolution"},
       { title: "Edge Detection", type: "[dis]", description: "Implemented edge detection algorithms for feature extraction in images." },
-      { title: "Fraud Detection using RAG, LLM", type: "[nlp]", description: "Developed a fraud detection system leveraging Retrieval-Augmented Generation and LLMs." }
+      { title: "Fraud Detection using RAG, LLM", type: "[nlp]", description: "Developed a fraud detection system leveraging Retrieval-Augmented Generation and LLMs.", link:"https://github.com/virajsanap/fraud_detector"}
     ]
   },
   {
     title: "RA Work",
     list: [
       { title: "Blueberry Anomaly Detection", type: "[ra]", description: "Detecting anomalies in blueberry datasets using deep learning models." },
-      { title: "Soybean Dashboard", type: "[ra]", description: "Developed a dashboard for monitoring and analyzing soybean crop data." }
+      { title: "Soybean Dashboard", type: "[ra]", description: "Developed a dashboard for monitoring and analyzing soybean crop data.", link:"https://dsa2.cals.ncsu.edu/webapp/"}
     ]
   }
 ];
@@ -38,8 +38,13 @@ function Section({ section, selectedType }) {
       <h2 className="text-xl font-bold mt-2 mb-3">{title}</h2>
       <div className="flex flex-col gap-2">
         {filteredList.map((item, index) => (
-          <div key={index} className="relative flex flex-row items-center p-3 border shadow w-full">
-            <a href={item.link} className="absolute top-4 right-5  text-sm flex items-center gap-1"><FaGithub/>
+          <div key={index} className="relative flex flex-row items-center p-3 border shadow w-5/6">
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-4 right-5 text-sm flex items-center gap-1"
+            ><FaGithub/>
             <span className="text-sm text-blue-600">Github</span>
             </a>
             <div className="flex flex-col">

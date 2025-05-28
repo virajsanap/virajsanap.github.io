@@ -23,13 +23,13 @@ function Home() {
   }, [theme]);
 
   return (
-    <div className="flex flex-col justify-center w-full md:max-w-3xl mx-auto gap-8 mt-[8vh] p-4">
-      <div className="flex flex-col md:flex-row w-full max-w-4xl">
+    <div className="flex flex-col justify-center w-full md:max-w-4xl mx-auto mt-[8vh] p-1">
+      <div className="flex flex-col md:flex-row w-full ">
         
         {/* Sidebar */}
         <div className="w-full md:w-1/6 flex justify-center">
           <nav
-            className="w-full flex flex-row md:flex-col gap-4 text-lg
+            className="w-full flex flex-row md:flex-col gap-2 text-lg
                        items-center md:items-end pr-3
                        text-center md:text-right mt-4 md:mt-20"
           >
