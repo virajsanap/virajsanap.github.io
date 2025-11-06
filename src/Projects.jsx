@@ -10,7 +10,7 @@ const projectSections = [
       { title: "MedQuad LLM", type: "[nlp]", description: "Developed a medical question-answering system using LLMs on the MedQuAD dataset.", link:"https://github.com/virajsanap/FineTuned_MedQUAD"},
       { title: "GitHub Miner", type: "[swe]", description: "Designed a tool to extract and analyze GitHub repository data for insights." },
       { title: "WolfEvents", type: "[swe]", description: "Developed an event management platform for university students.", link:"https://github.com/virajsanap/WolfEvents" },
-      { title: "Training MLP and CNN on CIFAR10", type: "[cv]", description: "Implemented MLP and CNN models for image classification on CIFAR-10 dataset.",link:""},
+      { title: "Training MLP and CNN on CIFAR10", type: "[cv]", description: "Implemented MLP and CNN models for image classification on CIFAR-10 dataset." },
       { title: "Vision Transformer", type: "[cv]", description: "Explored Vision Transformers for image classification and feature extraction." },
       { title: "Self Supervised Learning", type: "[cv]", description: "Applied self-supervised learning techniques for representation learning in computer vision." },
       { title: "Convolution", type: "[dis]", description: "Studied convolution operations and their impact on image processing.", link: "https://github.com/virajsanap/convolution"},
@@ -38,17 +38,23 @@ function Section({ section, selectedType }) {
       <h2 className="text-xl font-bold mt-2 mb-3">{title}</h2>
       <div className="flex flex-col gap-2">
         {filteredList.map((item, index) => (
-          <div key={index} className="relative flex flex-row items-center p-3 border shadow w-5/6">
-            <a
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute top-4 right-5 text-sm flex items-center gap-1"
-            ><FaGithub/>
-            <span className="text-sm text-blue-600">Github</span>
-            </a>
+          <div
+            key={index}
+            className="relative flex flex-col sm:flex-row items-start sm:items-center p-3 border shadow w-full sm:w-5/6 rounded-md transition-all duration-200 hover:shadow-md"
+          >
+            {item.link && (
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-3 right-4 text-sm flex items-center gap-1 text-gray-700 hover:text-black"
+              >
+                <FaGithub />
+                <span className="text-sm text-blue-600 hover:underline">GitHub</span>
+              </a>
+            )}
             <div className="flex flex-col">
-              <strong>{item.title}</strong>
+              <strong className="text-base">{item.title}</strong>
               <p className="text-sm text-orange-600">{item.type}</p>
               <p className="text-sm">{item.description}</p>
             </div>
@@ -64,26 +70,30 @@ function Projects() {
   const allTypes = ['all', ...new Set(projectSections.flatMap(section => section.list.map(item => item.type)))];
 
   return (
-    <div className="p-6 max-w-5xl mx-auto">
+    <div className="p-4 md:p-6 max-w-full md:max-w-5xl mx-auto overflow-x-hidden">
       <h1 className="text-2xl font-bold mb-4">My Projects</h1>
-      <div className="flex flex-row gap-2 mt-4 mb-4">
-        
+
+      {/* Filter Buttons */}
+      <div className="flex flex-wrap gap-2 mt-4 mb-4">
         {allTypes.map(type => (
           <button
-          key={type}
-          onClick={() => setSelectedType(type)}
-          className={`px-1 py-1 ${
-            selectedType === type ? "bg-black text-white" : "bg-orange-400 hover:bg-orange-300"
-          }`}
-        >
-          {type}
-        </button>
+            key={type}
+            onClick={() => setSelectedType(type)}
+            className={`px-2 py-1 text-sm rounded-md transition-colors ${
+              selectedType === type
+                ? "bg-black text-white"
+                : "bg-orange-400 hover:bg-orange-300 text-black"
+            }`}
+          >
+            {type}
+          </button>
         ))}
       </div>
+
+      {/* Project Sections */}
       <div className="flex flex-col gap-4">
         {projectSections.map((section, index) => (
           <Section key={index} section={section} selectedType={selectedType} />
-          
         ))}
       </div>
     </div>
