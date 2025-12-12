@@ -22,6 +22,15 @@ function Home() {
     document.body.style.color = theme === "sun" ? "white" : "black";
   }, [theme]);
 
+  // 1. Base: Box settings for mobile. On Desktop (md), we remove border and padding.
+  const baseBoxStyle = "px-2 py-1 border rounded transition-all duration-200 text-sm sm:text-base md:border-0 md:p-0 md:text-lg";
+  
+  // 2. Inactive: Hover background works on mobile. On Desktop (md), hover background is transparent.
+  const inactiveStyle = "border-gray-500/30 hover:border-orange-400 hover:bg-orange-50/10 hover:text-orange-500 md:hover:bg-transparent";
+  
+  // 3. Active: Background/Border on mobile. On Desktop (md), transparent background, no shadow, just bold text.
+  const activeStyle = "bg-orange-100/20 border-orange-500 text-orange-500 font-bold shadow-sm md:bg-transparent md:shadow-none";
+
   return (
     <div className="flex flex-col justify-center w-full md:max-w-4xl mx-auto mt-[8vh] p-1">
       <div className="flex flex-col md:flex-row w-full ">
@@ -29,7 +38,7 @@ function Home() {
         {/* Sidebar */}
         <div className="w-full md:w-1/6 flex justify-center">
           <nav
-            className="w-full flex flex-row md:flex-col gap-2 text-lg
+            className="w-full flex flex-row md:flex-col gap-1 text-lg flex-wrap
                        items-center md:items-end pr-3
                        text-center md:text-right mt-4 md:mt-20"
           >
@@ -38,7 +47,7 @@ function Home() {
                 key={path}
                 to={path}
                 className={({ isActive }) =>
-                  `hover:text-orange-500 focus:outline-none ${isActive ? "font-bold text-orange-500" : ""}`
+                  `${baseBoxStyle} ${isActive ? activeStyle : inactiveStyle}`
                 }
               >
                 {title}
@@ -46,7 +55,7 @@ function Home() {
             ))}
             <button
               onClick={changeTheme}
-              className="hover:text-orange-500 focus:outline-none"
+              className={`${baseBoxStyle} ${inactiveStyle} focus:outline-none`}
             >
               {theme}
             </button>

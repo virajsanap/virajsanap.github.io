@@ -3,7 +3,7 @@ import Home from './Home';
 import Projects from './Projects';
 import Resume from './Resume';
 import Experience from './Experience';
-import HomeContent from './HomeContent';
+
 import './App.css'
 import AnimatedRoutes from './AnimatedRoutes';
 

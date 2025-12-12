@@ -6,7 +6,6 @@ import Home from './Home';
 import Projects from './Projects';
 import Resume from './Resume';
 import Experience from './Experience';
-import HomeContent from './HomeContent';
 import HomeContentMobile from './HomeContentMobile';
 
 export default function AnimatedRoutes() {

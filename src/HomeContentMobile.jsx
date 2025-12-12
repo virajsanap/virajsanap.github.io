@@ -10,7 +10,7 @@ function HomeContentMobile() {
   );
 
   return (
-    <div className="h-full overflow-x-hidden px-3 sm:px-4 lg:px-8 max-w-full mx-auto">
+    <div className="w-full h-full overflow-x-hidden px-2 sm:px-4 lg:px-8 max-w-full mx-auto mt-2 md:mt-0">
       {/* Greeting Header */}
       <div className="w-full flex justify-center pb-1">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center">
@@ -80,31 +80,26 @@ function HomeContentMobile() {
           {/* About Section */}
           <div className="text-left w-full mt-4 min-w-0">
             <p className="text-sm sm:text-base leading-relaxed">
-              <b className="block mb-1 text-base sm:text-lg">About Me</b>
-              I'm Viraj, a passionate tech enthusiast. Recently I graduated with a Master's degree in Electrical and Computer Engineering from NC State University in Raleigh, NC.
-              <br />
-              My work revolves around harnessing Machine Learning, Data Science, and Computer Vision to create innovative solutions that address real-world challenges. I'm driven by the desire to develop socially impactful technology that makes a difference.
-            </p>
+              <b className="block mb-1 text-base sm:text-lg">About Me <br/></b>
+              I am a Machine Learning Engineer and Software Developer with a Masters in Electrical Engineering from NC State University (Class of 2025).
+              <br/>
+              <br/>
+              I build scalable AI solutions and production-ready software. My focus includes Computer Vision, LLMs, and Backend Development. I enjoy turning complex data problems into deployed applications.
+            </p> 
 
             {/* Job Search Info Box */}
-            <div className="border border-solid p-3 mt-5 rounded-md bg-white/30 dark:bg-transparent min-w-0">
-              <p className="text-sm sm:text-base leading-relaxed">
-                I'm currently looking for full-time <b>Machine Learning / Data Science roles</b> starting <b>June 2025</b> in the US. If you're hiring — or know someone who is — I'd love to connect and explore how I could contribute to your team!
-              </p>
-              <p className="mt-3 text-sm sm:text-base leading-relaxed">
-                Reach out anytime at{" "}
+            <div className="border border-solid p-2 mt-2 rounded-md bg-white/30 dark:bg-transparent min-w-0">
+              {/* <p className="text-sm sm:text-base leading-relaxed">
+                I am currently looking for full-time roles in <b> Software Engineering & Machine Learning/ Data Science</b> 
+              </p> */}
+              <p className="mt-2 text-sm sm:text-base leading-relaxed">
+                Reach out at{" "}
                 <a href="mailto:viraj.sanap@gmail.com" className="text-orange-600 hover:underline">
                   viraj.sanap@gmail.com
-                </a>
-                . You can also find me on{" "}
+                </a>. You can also find me on{" "}
                 <a href="https://www.linkedin.com/in/virajsanap14/" className="text-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">
-                  LinkedIn
-                </a>{" "}
-                and{" "}
-                <a href="https://github.com/virajsanap" className="text-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">
-                  GitHub
+                   LinkedIn
                 </a>
-                .
               </p>
             </div>
           </div>
@@ -112,10 +107,10 @@ function HomeContentMobile() {
       </div>
 
       {/* Footer */}
-      <div className="w-full text-center mt-8 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-        •───────• Built with{" "}
+      <div className="w-full text-center mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+        •───• Built with{" "}
         <a href="https://github.com/virajsanap/virajsanap.github.io" className="text-orange-500 hover:underline">˙ᵕ˙</a>{" "}
-        •───────•
+        •───•
       </div>
     </div>
   );
